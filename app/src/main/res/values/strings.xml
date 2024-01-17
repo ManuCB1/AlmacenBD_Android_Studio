@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AlmacenBD</string>
+
+<!--    Items Menu-->
+    <string name="alta">Alta</string>
+    <string name="consulta">Consulta</string>
+    <string name="baja">Baja</string>
+
+<!--    Titulos Toolbar-->
+    <string name="menuAlta">Añadir Artículo</string>
+    <string name="menuConsulta">Consultar Artículo</string>
+    <string name="menuBaja">Eliminar Artículo</string>
+</resources>
