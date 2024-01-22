@@ -46,8 +46,9 @@ public class MainConsulta extends AppCompatActivity {
         if (!id.isEmpty()){
             bdAdaptador = new BDAdaptador(this);
             String nombreRecogido = bdAdaptador.findById(id);
+            if (nombreRecogido.isEmpty())
+                nombreRecogido = "No encontrado";
             Toast.makeText(this, "Artículo: "+nombreRecogido, Toast.LENGTH_SHORT).show();
-                Log.i("Artículo", nombreRecogido);
         }
     }
 }

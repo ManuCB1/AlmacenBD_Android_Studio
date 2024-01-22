@@ -9,6 +9,7 @@ import com.example.almacenbd.MainActivity;
 import com.example.almacenbd.MainAlta;
 import com.example.almacenbd.MainBaja;
 import com.example.almacenbd.MainConsulta;
+import com.example.almacenbd.MainModificar;
 import com.example.almacenbd.R;
 
 public class MyToolBar {
@@ -22,6 +23,9 @@ public class MyToolBar {
         }
         if (item.getItemId() == R.id.item_baja && !(context instanceof MainBaja)){
             cambiarPagina = new Intent(context, MainBaja.class);
+        }
+        if (item.getItemId() == R.id.item_modificar && !(context instanceof MainModificar)){
+            cambiarPagina = new Intent(context, MainModificar.class);
         }
         if (cambiarPagina != null){
             context.startActivity(cambiarPagina);

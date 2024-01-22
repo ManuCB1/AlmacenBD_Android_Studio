@@ -44,7 +44,10 @@ public class MainAlta extends AppCompatActivity {
         if (!nombre.isEmpty()){
             bdAdaptador = new BDAdaptador(this);
             long resultado = bdAdaptador.insertar(nombre);
-            if (resultado!=-1) Toast.makeText(this, "Artículo guardado correctamente", Toast.LENGTH_SHORT).show();
+            if (resultado!=-1){
+                Toast.makeText(this, "Artículo guardado correctamente", Toast.LENGTH_SHORT).show();
+                textNombre.setText("");
+            }
             else Toast.makeText(this, "Error al guardar artículo", Toast.LENGTH_SHORT).show();
         }
         else Toast.makeText(this, "El campo Nombre está vacío", Toast.LENGTH_SHORT).show();

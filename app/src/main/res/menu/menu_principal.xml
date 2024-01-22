@@ -16,4 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:title="@string/baja" />
+    <item
+        android:id="@+id/item_modificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="@string/modificar" />
 </menu>
